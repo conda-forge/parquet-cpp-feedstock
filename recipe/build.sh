@@ -5,7 +5,6 @@ set -x
 
 # Build dependencies
 export BOOST_ROOT=$PREFIX
-export ARROW_HOME=$PREFIX
 export SNAPPY_HOME=$PREFIX
 export THRIFT_HOME=$PREFIX
 export ZLIB_HOME=$PREFIX
