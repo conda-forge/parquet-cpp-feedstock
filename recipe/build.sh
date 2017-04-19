@@ -10,6 +10,7 @@ export SNAPPY_HOME=$PREFIX
 export THRIFT_HOME=$PREFIX
 export ZLIB_HOME=$PREFIX
 export BROTLI_HOME=$PREFIX
+export PARQUET_ARROW_VERSION=0dc6fe8f33befaaa5fc8055b6c157ac1ccb09e6b
 
 mkdir build-dir
 cd build-dir
