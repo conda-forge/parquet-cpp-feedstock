@@ -1,5 +1,5 @@
 {% set version = "1.1.0pre" %}
-{% set commit = "62905f90c75f8891f2e91cb39a29efe56afed614" %}
+{% set commit = "5830482f7cc11392f9a14d9520bcbd8d6adc944b" %}
 
 # NOTE(wesm): When updating the build, please remember also to update the
 # pinned Arrow version. We are letting parquet-cpp build its own Apache Arrow
@@ -14,7 +14,7 @@ package:
 source:
   fn: apache-parquet-cpp-{{ version }}.tar.gz
   url: https://github.com/apache/parquet-cpp/archive/{{ commit }}.tar.gz
-  sha256: badb29c24317465375783a55989a6acb6bae6a87da6952a04a5f84cf3bde599f
+  sha256: 66117d9b52ee7665d73260ed9f79293afe4b275c1fc2381ef91063d64d02fe95
 
 build:
   number: 0
