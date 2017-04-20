@@ -20,6 +20,15 @@ build:
   number: 0
   skip: true  # [win]
 
+# TODO(wesm): Not including arrow-cpp in the requirements because that
+# introduces a build-time dependency on up-to-date conda-forge packages. While
+# these libraries are changing fast, this does more harm than good to developer
+# productivity. When things are changing less often, we should pin a precise
+# Arrow runtime version here
+
+# run:
+#   - arrow-cpp 0.3.*
+
 requirements:
   build:
     - toolchain
@@ -29,9 +38,6 @@ requirements:
     - snappy
     - brotli
     - thrift-cpp
-
-  run:
-    - arrow-cpp 0.3.*
 
 test:
   commands:
