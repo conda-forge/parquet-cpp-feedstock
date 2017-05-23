@@ -8,6 +8,7 @@ pushd C:\bld\build
 cmake -G "%CMAKE_GENERATOR%" -DCMAKE_BUILD_TYPE=Release ^
                              -DCMAKE_INSTALL_PREFIX="%LIBRARY_PREFIX%" ^
                              -DPARQUET_BOOST_USE_SHARED=OFF ^
+                             -DPARQUET_BUILD_TESTS=OFF ^
                              -DPARQUET_ZLIB_VENDORED=OFF ^
                              "%SRC_DIR%"
 
