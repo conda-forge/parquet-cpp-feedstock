@@ -43,17 +43,12 @@ test:
 
   commands:
     - test -f $PREFIX/lib/libparquet.so                                       # [linux]
-    - test -f $PREFIX/lib/libparquet_arrow.so                                 # [linux]
     - test -f $PREFIX/lib/libparquet.dylib                                    # [osx]
-    - test -f $PREFIX/lib/libparquet_arrow.dylib                              # [osx]
     - test -f $PREFIX/include/parquet/api/reader.h                            # [unix]
     - if not exist %PREFIX%\\Library\\include\\parquet\\api\\reader.h exit 1  # [win]
     - if not exist %PREFIX%\\Library\\bin\\parquet.dll exit 1                 # [win]
     - if not exist %PREFIX%\\Library\\lib\\parquet.lib exit 1                 # [win]
     - if not exist %PREFIX%\\Library\\lib\\parquet_static.lib exit 1          # [win]
-    - if not exist %PREFIX%\\Library\\bin\\parquet_arrow.dll exit 1           # [win]
-    - if not exist %PREFIX%\\Library\\lib\\parquet_arrow.lib exit 1           # [win]
-    - if not exist %PREFIX%\\Library\\lib\\parquet_arrow_static.lib exit 1    # [win]
 
 about:
   home: http://github.com/apache/parquet-cpp
