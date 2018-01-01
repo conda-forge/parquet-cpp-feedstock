@@ -26,7 +26,7 @@ build:
 requirements:
   build:
     - toolchain
-    - boost-cpp 1.65.*
+    - boost-cpp 1.66.*
     - cmake
     - thrift-cpp
     - python            # [win]
