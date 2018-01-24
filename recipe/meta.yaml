@@ -28,7 +28,7 @@ requirements:
     - toolchain
     - boost-cpp 1.66.0
     - cmake
-    - thrift-cpp
+    - thrift-cpp <0.11
     - python            # [win]
     - arrow-cpp 0.8.0
 
