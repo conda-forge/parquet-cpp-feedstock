@@ -1,0 +1,36 @@
+From 96d611544057b3284f1ae867080e0e9f6d8e3b46 Mon Sep 17 00:00:00 2001
+From: Max Risuhin <risuhin.max@gmail.com>
+Date: Tue, 13 Feb 2018 14:05:33 +0200
+Subject: [PATCH] PARQUET-1210: [C++] Completely disable boost autolink on MSVC
+ build
+
+---
+ cmake_modules/ThirdpartyToolchain.cmake | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/cmake_modules/ThirdpartyToolchain.cmake b/cmake_modules/ThirdpartyToolchain.cmake
+index 52ab7a8..4c6468f 100644
+--- a/cmake_modules/ThirdpartyToolchain.cmake
++++ b/cmake_modules/ThirdpartyToolchain.cmake
+@@ -58,14 +58,15 @@ endif()
+ # find boost headers and libs
+ set(Boost_DEBUG TRUE)
+ set(Boost_USE_MULTITHREADED ON)
++if (MSVC)
++  # disable autolinking in boost
++  add_definitions(-DBOOST_ALL_NO_LIB)
++endif()
+ if (PARQUET_BOOST_USE_SHARED)
+   # Find shared Boost libraries.
+   set(Boost_USE_STATIC_LIBS OFF)
+ 
+   if (MSVC)
+-    # disable autolinking in boost
+-    add_definitions(-DBOOST_ALL_NO_LIB)
+-
+     # force all boost libraries to dynamic link
+     add_definitions(-DBOOST_ALL_DYN_LINK)
+     find_package(Boost COMPONENTS regex system REQUIRED)
+-- 
+2.12.2.windows.2
+

@@ -16,6 +16,9 @@ source:
   fn: apache-parquet-cpp-{{ version }}.tar.gz
   url: https://github.com/apache/parquet-cpp/archive/{{ commit }}.tar.gz
   sha256: {{ sha256sum }}
+  patches:
+    # Disables boost auto linkage on Windows
+    - disable-boost-autolink.patch
 
 build:
   number: 1
