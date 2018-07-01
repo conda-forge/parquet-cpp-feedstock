@@ -19,7 +19,6 @@ source:
 
 build:
   number: 1
-  skip: true  # [win and not (py35 and win64)]
 
 requirements:
   build:
@@ -35,9 +34,6 @@ requirements:
     - arrow-cpp 0.9.0
 
 test:
-  requires:
-    - python {{ environ['PY_VER'] + '*' }}  # [win]
-
   commands:
     - test -f $PREFIX/lib/libparquet.so                                       # [linux]
     - test -f $PREFIX/lib/libparquet.dylib                                    # [osx]
