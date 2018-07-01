@@ -18,18 +18,17 @@ source:
   sha256: {{ sha256sum }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and not (py35 and win64)]
-  features:
-    - vc14  # [win and py35]
 
 requirements:
   build:
-    - toolchain
-    - boost-cpp 1.66.0
     - cmake
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - boost-cpp
     - thrift-cpp >=0.11
-    - python            # [win]
     - arrow-cpp 0.9.0
 
   run:
