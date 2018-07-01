@@ -14,14 +14,16 @@ Summary: C++ libraries for the Apache Parquet file format
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/parquet-cpp-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/parquet-cpp-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/parquet-cpp-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/parquet-cpp-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/parquet-cpp-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/parquet-cpp-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/parquet-cpp-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/parquet-cpp-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/parquet-cpp-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/parquet-cpp-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/parquet-cpp/badges/version.svg)](https://anaconda.org/conda-forge/parquet-cpp)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/parquet-cpp/badges/downloads.svg)](https://anaconda.org/conda-forge/parquet-cpp)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-parquet--cpp-green.svg)](https://anaconda.org/conda-forge/parquet-cpp) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/parquet-cpp.svg)](https://anaconda.org/conda-forge/parquet-cpp) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/parquet-cpp.svg)](https://anaconda.org/conda-forge/parquet-cpp) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/parquet-cpp.svg)](https://anaconda.org/conda-forge/parquet-cpp) |
 
 Installing parquet-cpp
 ======================
