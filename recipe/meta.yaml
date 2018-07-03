@@ -33,6 +33,7 @@ requirements:
     - arrow-cpp 0.9.0
 
   run:
+    - boost-cpp
     - arrow-cpp 0.9.0
 
 test:
