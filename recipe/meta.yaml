@@ -38,7 +38,6 @@ requirements:
 
 test:
   commands:
-    - conda inspect linkages parquet-cpp
     - test -f $PREFIX/lib/libparquet.so                                       # [linux]
     - test -f $PREFIX/lib/libparquet.dylib                                    # [osx]
     - test -f $PREFIX/include/parquet/api/reader.h                            # [unix]
