@@ -38,6 +38,8 @@ requirements:
 
 test:
   commands:
+    - ls -1 $PREFIX/lib/lib*.so # [linux]
+    - ldd $PREFIX/lib/libparquet.so # [linux]
     - test -f $PREFIX/lib/libparquet.so                                       # [linux]
     - test -f $PREFIX/lib/libparquet.dylib                                    # [osx]
     - test -f $PREFIX/include/parquet/api/reader.h                            # [unix]
