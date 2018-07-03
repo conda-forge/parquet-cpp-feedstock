@@ -25,6 +25,7 @@ build:
 requirements:
   build:
     - cmake
+    - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
     - boost-cpp
