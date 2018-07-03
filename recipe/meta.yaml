@@ -25,7 +25,6 @@ build:
 requirements:
   build:
     - cmake
-    - patchelf
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
