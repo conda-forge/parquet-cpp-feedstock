@@ -12,8 +12,6 @@ package:
 build:
   number: 2
   noarch: generic
-  skip: true  # [win32]
-  skip: true  # [win and py<35]
 
 requirements:
   host:
