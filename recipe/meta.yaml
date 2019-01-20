@@ -10,7 +10,7 @@ package:
   version: {{ parquet_version }}
 
 build:
-  number: 2
+  number: 3
   noarch: generic
 
 requirements:
